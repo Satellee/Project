@@ -1,0 +1,154 @@
+@charset "UTF-8";
+*{
+box-sizing: border-box;
+}
+img{overflow:hidden;}
+
+body{
+padding:20px;
+background:#f1f1f1;
+}
+
+.topnav{
+overflow:hidden;
+background-color:dodgerblue;
+}
+button.btn-info{
+background-color:dodgerblue;
+border:none;
+margin-top:3px;
+}
+#hiddenBtn{
+display:none;
+}
+.topnav a{
+float:left;
+display:block;
+color:#f2f2f2;
+text-align:center;
+padding: 8px;
+text-decoration: none;}
+.topnav a.disableHover:hover{
+background-color:blue;
+color:#f2f2f2;
+}
+.recommendedList{
+
+}
+.w3-sidebar{
+width:30%;
+}
+
+.leftcolumn{
+float:left;
+width:25%;}
+/* 즉 왼쪽 오른쪽 배열은 나열한 후에 width의 크기로 표처럼 공간을 제약시켜서 구분한다. */
+.rightcolumn{
+float:left;
+width:75%;
+background-color:#f2f2f2;
+padding-left: 20px;}
+
+/*
+만약 비율이 필요할 경우에는 다음의 링크를 활용할 것.
+http://start.goodtime.co.kr/2014/02/%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9D%98-%EA%B0%80%EB%A1%9C%EC%84%B8%EB%A1%9C%EB%B9%84%EB%A5%BC-%EC%9C%A0%EC%A7%80%ED%95%98%EB%A9%B4%EC%84%9C-%ED%8B%80-%EC%95%88%EC%97%90-%EB%A7%9E%EC%B6%94%EB%A0%A4/
+
+
+*/
+
+div.recommendedFriendPicture img{
+width:40px;
+height:40px;
+z-index:200;
+overflow:hidden;
+}
+div.recommendTextHeightAdjust{
+padding-top:10px;
+}
+
+
+.rightMyInfo{
+}
+
+.fakeimg{
+background-color:#aaa;
+width:100%;
+padding:20px;
+}
+.leftMyPicture{
+width:82px;
+height:106px;
+padding-top:20px;
+padding-left:10px;
+background-color:#f1f1f1;
+}
+.leftMyPicture img{
+max-height:80px;;width:52px;
+}
+
+div.colorBlk a{
+color:black;
+text-decoration:none;
+}
+
+
+button a{
+color:white;
+text-decorate:none;/* 뭔지 모르겠지만 지금은 작동이 안됨 다시 확인 바람.*/
+
+}
+/*
+.topnav a:hover{
+background-color:aqua;
+color:black;
+}*/
+
+/* 이렇게 하면 해당 줄에 전체 회색이 감돌게 하지만 일단 둔다. */
+
+.card{
+background-color:white;
+padding:20px;
+/* 열과 열은 (행과 행 포함) padding을 통해서 구분을 해준다. */
+margin-top:20px;
+/* 윗줄을 padding의 색깔 wite 없이 구분하려면 margin을 쓴다. */
+}
+
+.row:after{
+content: "";
+display: table;
+clear:both;
+}
+/* 칼럼뒤에 float를 없애준다고 표현이 되어있긴 한데 이게 뭔 내용인지 아직 잘 모르겠다.  */
+
+/* 반응형 레이아웃 */
+
+@media(max-width:900px) {
+.rightcolumn{
+width:100%;
+padding:0;}
+.leftcolumn{
+display:none;
+}
+#hiddenBtn{
+display:inline;
+padding:5px;
+}
+/*
+a.productName{
+display:none;
+}*/
+/* padding은 잘 모르겠지만, width를 통해서 겹치게 만든거 같음. 75%가 되는 상황에서 겹쳐서 들어감. 
+800px가 되니까 내 정보가 아래로 들어가게 됨.
+내가 보기에는 차라리 내 정보를 가리는 게 맞지 않나 싶음.
+아아 알겠음 800px되니까 걍 width를 100%로 해 이런식임.
+
+*/
+}
+
+
+@media(max-width:400px){
+.topnav a {
+float:none;
+width:100%;}
+}
+
