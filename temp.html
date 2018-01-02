@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/CSS" href="./CSS/tempStyle.css">
+<link rel="stylesheet" type="text/CSS" href="./CSS/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+<script>
+$(document).ready(function(){
+
+//
+
+$('.logoutBtn').popover({trigger:"focus",title: "로그아웃 하시겠습니까?", content: "<button type='button' class='btn btn-primary' onclick=''>예</button> <button type='button' class='btn btn-danger'>아니오</button>", html: true, placement: "bottom auto"
+//단추이 안눌리면 focus 해제할것.
+});});
+</script>
+</head>
+<body>
+<div class="topnav">
+<button id="hiddenBtn" class="w3-button w3-white w3-large" style="float:left;"onclick="w3_open()">&#9776;</button>
+<a href="https://google.com" class="productName">발노트</a>
+<p style="color:white; display:inline;float:right; font-size:13px; margin-top:7px;">환영합니다.</p>
+<button class="logoutBtn btn btn-info" style="float:right;">이-글 님</button>
+ <!-- 모달용 버튼 이렇게 생긴 것으로 보아 모달도 jQ에 있을 것으로 추정된다. -->
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="row">
+<!-- /*여기부터 왼쪽의 내 정보메뉴 즉, 폭이 줄어들 경우 메뉴 버튼으로 이동할 내용이 아래 왼쪽 메뉴끝이라고 써있는 부분까지
+전부 다 해당되므로 이걸 복사(JAVA에서 도출할 경우 두군데서 출력)해야 한다.
+*/ -->
+
+<div class="leftcolumn">
+<div class="card">
+<div class="leftcolumn">
+<div class="leftMyPicture">
+<img src="./img/Eagleeye.jpg" style=""></div>
+</div><div class="rightcolumn">
+<div class="rightMyInfo">
+<div class="w3-margin-top"<p><a href="#">이-글</a> 님 <p></div>
+<p>쪽지 <button type="button" class="w3-right w3-margin-right btn btn-warning btn-xs alarm-new" ><a href="#">8</a></button></p>
+<p><a href="#">내 글</a>에 반응<button type="button" class="w3-right w3-margin-right btn btn-warning btn-xs"><a href="#">8</a></button></p>
+</div>
+</div>
+<div><h3> </h3></div>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#recommendedList" style="margin-top:10px;">오늘의 추천친구</button>
+<div id="recommendedList" class="collapse">
+<h3> </h3>
+<div class="recommendedFriendPicture"><img src="./img/waitingPark.jpg">박대기<div class="recommendTextHeightAdjust w3-right">
+<button type="button" class="btn btn-success btn-xs">추가</button>
+<button type="button" class="btn btn-warning btn-xs">거절</button>
+<button type="button" class="btn btn-danger btn-xs">차단</button>
+</div>
+</div>
+<div class="recommendedFriendPicture"><img src="./img/waitingKim.gif">김대기
+<div class="recommendTextHeightAdjust w3-right">
+<button type="button" class="btn btn-success btn-xs">추가</button>
+<button type="button" class="btn btn-warning btn-xs">거절</button>
+<button type="button" class="btn btn-danger btn-xs">차단</button>
+</div>
+</div>
+<div class="recommendedFriendPicture"><img src="./img/waitingHan.jpg">한조  대기중
+<div class="recommendTextHeightAdjust w3-right">
+<button type="button" class="btn btn-success btn-xs">추가</button>
+<button type="button" class="btn btn-warning btn-xs">거절</button>
+<button type="button" class="btn btn-danger btn-xs">차단</button>
+
+</div>
+<div class="center"> 추천친구 더 보기</div>
+</div>
+
+</div>
+</div>
+<div class="card">
+<h4>실시간 떠오르는 글</h4><a href="대략 10분정도 지나야 새로고침 가능하도록"><button type="button" class="btn w3-right  	glyphicon glyphicon-refresh" ></button></a>
+<div class="fakeimg">1위</div>
+<div class="fakeimg">2위</div>
+<div class="fakeimg">3위</div>
+</div>
+<div class="card">
+<h4>최근 누른 좋아요 글</h4>
+<div class="fakeimg"></div>
+<p>내게 돌아와~</p>
+</div>
+
+
+
+
+
+
+<!-- /* ▲ 여기까지가 왼쪽의 내 정보 메뉴*/ -->
+
+
+
+</div>
+<div class="rightcolumn">
+<div class="card">
+<div class="fakeimg" style="height:200px;">Image</div>
+<h5> 윗부분을 아래방향으로 슬라이드하면서 새로고침하는 것에 대해서</h5>
+<p>할 줄 모르면 그냥 버튼을 만들것 할줄도 모르면서 끙끙 싸매는것보다</p>
+<p>기능은 만들고 추후에 이를 대체하는 것이 훨씬 현명하다.</p>
+<div class="fakeimg"><img src="./img/img01.png">괜히 그것만 생각하다 프로젝트 망치지말고
+</div>
+</div>
+<div class="card">
+<div class="fakeimg" style="height:200px;">Image</div>
+<h5> 여기도 마찬가지</h5>
+<p>할줄 모르면 최대한 비슷한 기능을 가진 단추를 만들어서 버튼을 누르면</p>
+<p> 불러오게 하고 나머지는 사용자가 알아서 하라고 해</p>
+<div class="fakeimg"><img src="./img/img01.png">시간을 맞추는게 중요하지 책임감을 가져라.
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
